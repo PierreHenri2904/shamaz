@@ -9,74 +9,72 @@
 import UIKit
 
 class ViewController: UIViewController {
+    // MARK:- Outlets
     @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var whoIsNextButton: UIButton!
+    @IBOutlet weak var storyView: UITextView!
     
+    // MARK:- LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         //        let randomInt = Int.random(in: 1..<11)
         //        label.text = "\(randomInt)"
     }
+    // MARK:- Actions
+    /// Properties of the Past Button
+    /// # create a random time period in the past associated with a number between 1 and 10
+    /// # make the storyView field available
     @IBAction func pastButton(_ sender: UIButton) {
         let randomInt = Int.random(in: 1..<11)
-        let names = ["week", "month", "year"]
-        if let randomName = names.randomElement() {
+        let periods = ["week", "month", "year"]
+        if let randomPeriod = periods.randomElement() {
             if randomInt > 1 {
-                label.text = "Describe your \(randomName) \(randomInt) \(randomName)s ago"
+                label.text = "Describe your \(randomPeriod) \(randomInt) \(randomPeriod)s ago"
             }
             else {
-                label.text = "Describe your \(randomName) \(randomInt) \(randomName) ago"
+                label.text = "Describe your \(randomPeriod) \(randomInt) \(randomPeriod) ago"
             }
         }
-        changetextview()
         storyView.isHidden = false
     }
-    
+    /// Properties of the Future Button
+    /// # create a random time period associated with a number between 1 and 4
+    /// # make the storyView field available
     @IBAction func futureButton(_ sender: UIButton) {
         let randomInt = Int.random(in: 1..<5)
-        let names = ["week", "month", "year"]
-        if let randomName = names.randomElement() {
+        let periods = ["week", "month", "year"]
+        if let randomPeriod = periods.randomElement() {
             if randomInt > 1 {
-                label.text = "What would you like to do in \(randomInt) \(randomName)s"
+                label.text = "What would you like to do in \(randomInt) \(randomPeriod)s"
             }
             else {
-                label.text = "What would you like to do in \(randomInt) \(randomName)"
+                label.text = "What would you like to do in \(randomInt) \(randomPeriod)"
             }
         }
-        changetextview()
-        storyView.isHidden = false
+            storyView.isHidden = false
     }
-    
-    @IBOutlet weak var whoIsNextButon: UIButton!
-    
-    func changetextview() {
-        // textView.text = ""
-    }
-    /// jkfl jlöjlöa jlösajö
+    /// button WhoIsNextTapped
     ///
+    /// # to create a random number between 1 and 10 to design next storyteller
     /// # to make sure that the storyView is empty when who is next is tipped on
-    /// # fkl jfklajfkfja
     @IBAction func whoIsNextTapped(_ sender: UIButton) {
         storyView.resignFirstResponder()
         let randomInt = Int.random(in: 1..<11)
         label.text = "\(randomInt)"
-        changetextview()
         storyView.text = "type your answer here!"
         storyView.isHidden = true
-        whoIsNextButon.isEnabled = false
+        whoIsNextButton.isEnabled = false
     }
-    @IBOutlet weak var storyView: UITextView!
 }
+// MARK:- UITextViewDelegate
+/// whoIsNext appearance Button Properties
 
+/// # make whoIsNext visible when text is entered in storyView
+/// # make whoIsNext grey when text is not entered
 extension ViewController: UITextViewDelegate {
     func textViewDidChange(_ textView: UITextView) {
-        whoIsNextButon.isEnabled = textView.hasText
-//        if textView.hasText {
-//            whoIsNextButon.isEnabled = true
-//        }
-//        else {
-//            whoIsNextButon.isEnabled = false
-//        }
+        whoIsNextButton.isEnabled = textView.hasText
     }
     func textViewDidBeginEditing(_ textView: UITextView) {
         textView.text = nil
