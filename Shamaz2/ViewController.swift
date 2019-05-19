@@ -30,10 +30,10 @@ class ViewController: UIViewController {
         let periods = ["week", "month", "year"]
         if let randomPeriod = periods.randomElement() {
             if randomInt > 1 {
-                label.text = "Describe your \(randomPeriod) \(randomInt) \(randomPeriod)s ago"
+                label.text = "Describe what you were doing \(randomInt) \(randomPeriod)s ago"
             }
             else {
-                label.text = "Describe your \(randomPeriod) \(randomInt) \(randomPeriod) ago"
+                label.text = "Describe what you were doing \(randomInt) \(randomPeriod) ago"
             }
         }
         storyView.isHidden = false
@@ -46,10 +46,10 @@ class ViewController: UIViewController {
         let periods = ["week", "month", "year"]
         if let randomPeriod = periods.randomElement() {
             if randomInt > 1 {
-                label.text = "What would you like to do in \(randomInt) \(randomPeriod)s"
+                label.text = "What would you like to do in \(randomInt) \(randomPeriod)s?"
             }
             else {
-                label.text = "What would you like to do in \(randomInt) \(randomPeriod)"
+                label.text = "What would you like to do in \(randomInt) \(randomPeriod)?"
             }
         }
             storyView.isHidden = false
