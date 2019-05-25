@@ -26,10 +26,10 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ANl-fG-Shr">
                                                 <rect key="frame" x="0.0" y="0.0" width="187.5" height="48"/>
-                                                <color key="backgroundColor" red="0.39708550366765261" green="0.72431657813236816" blue="1" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.098039215686274508" green="0.36470588235294116" blue="0.50196078431372548" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="30"/>
                                                 <state key="normal" title="Past">
-                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="pastButton:" destination="5Fo-NA-crO" eventType="touchUpInside" id="ORz-a0-5Nv"/>
@@ -37,10 +37,10 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="esp-hV-d4y">
                                                 <rect key="frame" x="187.5" y="0.0" width="187.5" height="48"/>
-                                                <color key="backgroundColor" red="1" green="0.72625361937456601" blue="0.42091489917558933" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.16078431372549018" green="0.58823529411764708" blue="0.80000000000000004" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="30"/>
                                                 <state key="normal" title="Future">
-                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="futureButton:" destination="5Fo-NA-crO" eventType="touchUpInside" id="O22-Ss-dCk"/>
@@ -64,7 +64,7 @@
                                     </button>
                                     <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="1000" text="type your answer here!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="axi-BF-67Y">
                                         <rect key="frame" x="0.0" y="179" width="375" height="167"/>
-                                        <color key="backgroundColor" red="0.69452159686560222" green="1" blue="0.90248370033213676" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.66274509803921566" green="0.8901960784313725" blue="0.99607843137254903" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -75,7 +75,7 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="0.75623511102517083" green="0.98681923463814303" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.50196078431372548" green="0.83137254901960778" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Ukf-h8-LDg" firstAttribute="trailing" secondItem="8B5-Kj-E4G" secondAttribute="trailing" id="BNS-iL-RWn"/>
                             <constraint firstItem="8B5-Kj-E4G" firstAttribute="leading" secondItem="Ukf-h8-LDg" secondAttribute="leading" id="var-WG-3hI"/>
